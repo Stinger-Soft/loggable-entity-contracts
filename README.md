@@ -1,0 +1,1 @@
+# loggable-entity-contracts
