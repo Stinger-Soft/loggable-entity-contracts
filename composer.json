@@ -1,0 +1,48 @@
+{
+	"name" : "stinger-soft/loggable-entity-contracts",
+	"type" : "symfony-bundle",
+	"description" : "Generic abstractions related to loggable entities",
+	"keywords" : [
+		"Contract",
+		"Entity",
+		"Loggable",
+		"History"
+	],
+	"homepage" : "http://www.stinger-soft.net",
+	"authors" : [
+		{
+			"name" : "Florian Meyer",
+			"email" : "florian.meyer@stinger-soft.net",
+			"role" : "Developer"
+		},
+		{
+			"name" : "Oliver Kotte",
+			"email" : "oliver.kotte@stinger-soft.net",
+			"role" : "Developer"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"StingerSoft\\Contracts\\Entity\\Loggable\\" : ""
+		},
+		"exclude-from-classmap" : [
+			"/Tests/"
+		]
+	},
+	"license" : "Apache-2.0",
+	"require" : {
+		"php" : ">=7.2",
+		"doctrine/orm" : "^2.0",
+		"stinger-soft/entity-contracts" : "^1.0@dev",
+		"symfony/event-dispatcher-contracts": "^1.0|^2.0",
+		"symfony/security-core" : "^4.0|^5.0"
+	},
+	"require-dev" : {
+
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "1.0.x-dev"
+		}
+	}
+}
